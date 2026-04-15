@@ -1,4 +1,132 @@
 body {
-    margin: 0;
+    background-color: black;
+    margin: 0px;
 }
 
+
+#parent {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 20vh 1fr 1fr 10vh;
+    grid-template-areas:
+        "hd hd hd"
+        "as mn nv"
+        "as mn se"
+        "ft ft ft";
+}
+
+#pumpi {
+
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+
+}
+
+#skel {
+    width: 300px;
+}
+
+#sweeper {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+a {
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+h2 {
+    display: flex;
+    position: absolute;
+    font-size: 50px;
+    margin: 10px;
+    
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+#lyrics {
+
+    width: 300px;
+    margin: 10px;
+
+}
+
+
+li {
+    font-size: 30px;
+    margin: 15px
+}
+
+header {
+    display: flex;
+    grid-area: hd;
+    background-color: orangered;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+aside {
+    display: flex;
+    grid-area: as;
+    background-color: orangered;
+    margin: 10px;
+    font-size: 20px;
+    align-items: stretch;
+ 
+}
+
+main {
+
+    display: flex;
+    grid-area: mn;
+    background-color: orangered;
+    margin: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav {
+
+    display: flex;
+    grid-area: nv;
+    background-color: orangered;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+section {
+    grid-area: se;
+    background-color: orangered;
+    margin: 10px;
+}
+
+footer {
+    grid-area: ft;
+    background-color: orangered;
+    margin: 10px;
+    background-image: url("..img/yard.jpg");
+}
